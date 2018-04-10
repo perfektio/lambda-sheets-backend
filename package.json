@@ -1,0 +1,8 @@
+{
+  "name": "hackathonit",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "request": "^2.83.0"
+  }
+}
