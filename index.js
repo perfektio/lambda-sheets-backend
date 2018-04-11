@@ -1,8 +1,8 @@
-let request = require("request");
+const request = require("request");
 
 exports.handler = function(event, context, callback) {
-  let key = "YOUR-KEY-HERE";
-  let url = "https://spreadsheets.google.com/feeds/list/"+key+"/od6/public/values?alt=json";
+  const key = "YOUR-KEY-HERE";
+  const url = "https://spreadsheets.google.com/feeds/list/"+key+"/od6/public/values?alt=json";
 
   request({
     json: true,
