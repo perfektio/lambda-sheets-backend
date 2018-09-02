@@ -26,6 +26,9 @@ exports.handler = function(event, context, callback) {
       return columns;
     })
 
-    callback(null, parsed);
+    callback(null, {
+      statusCode: 200,
+      body: JSON.stringify(parsed)
+    });
   });
 };
